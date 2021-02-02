@@ -61,7 +61,58 @@
             border-color: black;
             border-style: solid;
             border-radius: 200px;
+            border-collapse: collapse;
 
+        }
+
+        #first-table {
+            background-color: grey;
+            border-style: dashed;
+            border-color: green;
+            border-width: 6px;
+            width: 400px;
+        }
+
+        /* border shorthand */
+
+        #first-table tr {
+            border : 1px dotted blue;
+        }
+
+        #first-table td{
+            border: 1px solid green;
+            border-radius: 5px;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            background-color: white;
+            font-family: 'Courier New', Courier, monospace;
+            
+
+        }
+
+        #username {
+            background-color: white;
+            margin: 20px ;
+            padding: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            color: lightslategray;
+            border: slategray 2px solid;
+            border-radius: 5px;
+
+
+        }
+
+        #submitbutton {
+            width: 52px;
+            height: 52px;
+            padding: 0;
+            border-radius: 50%;
+            border-color: lavender;
+            border-style: solid;
+            color: white;
         }
     
     </style>
@@ -105,8 +156,9 @@
                 <img src="rose.png" alt="no file." width="200" height="200" />
                 <figcaption id="special">This a broken image.</figcaption>
             </figure>
+            <!-- Dont start with a number, special charecter, don't use spaces unintentionally, don't capitalize the first letter. -->
 
-            <table>
+            <table id="first-table">
                 <thead>
                     <tr>
                         <td>Column 1</td>

@@ -1,0 +1,60 @@
+<! DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Css Specificity </title>
+
+        <style>
+
+            #redbox, #bluebox, #greenbox {
+                height:100px;
+                width: 100px;
+                border-radius: 10px;
+                background-color: cyan;
+            }
+
+            #redbox {
+                background-color: gray;
+            }
+
+            #redbox{
+                height: 100px;
+                background-color: red;
+            }
+
+            #bluebox {
+                height: 100px;
+                background-color: blue;
+
+
+            }
+
+            #greenbox {
+
+                height: 100px;
+                background-color:green;
+            }
+
+            body main form #password  {
+
+            }
+
+            body .container .sidebar p {
+                
+            }
+
+
+
+
+        </style>
+
+    </head>
+
+
+    <body>
+        <div id="redbox" class="box"></div>
+        <div id="bluebox" class="box"></div>
+        <div id="greenbox" class="box"></div>
+
+    </body>
+    </html>
