@@ -1,3 +1,40 @@
 body{
-    background-color: brown;
+    background-color:antiquewhite;
+}
+header {
+    width: 900px;
+    height: 200px;
+    border-bottom: black 2px solid;
+}
+header nav ul{
+
+    list-style-type:none;
+    /*border: 1px solid red; */
+    padding-left: 0;
+    text-align: right;
+}
+
+header nav li {
+    border: 1px solid green;
+    width: 150px;
+    display: inline-block;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    font-size: 22px;
+
+
+}
+
+main {
+    width: 900px;
+    height: 200px;
+    border-bottom: black 2px solid;
+}
+
+footer {
+    width: 900px;
+    height: 200px;
+    border-bottom: black 2px solid;
 }
