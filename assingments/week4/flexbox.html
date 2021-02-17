@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>CSS Flexbox</title>
+
+
+    <style>
+        body {
+            color: white;
+            font-size: 24px;
+            font-family: Arial;
+        }
+
+        #container {
+            /* height: 500px; */
+            background-color:moccasin;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .child {
+            background-color:olivedrab;
+            /* height: 33.3%; 166.6666666~ */
+            flex-grow: 1;
+            /* margin: 0 5px; */
+            flex-basis: 250px;
+            flex-shrink: 1;
+        }
+
+        #first {
+            order: 1;
+        }
+
+        #second {
+            flex-grow: 6;
+            flex-basis: 400px;
+            flex-shrink: 2;
+            background-color:orange;
+        }
+
+        #third {
+            /* flex-grow: 4; */
+            background-color:royalblue;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <div class="child" id="first">
+            <p>1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, quia quam ea maxime eum saepe optio vero ab, dolorum minima suscipit odio dolorem perspiciatis doloribus cupiditate voluptatibus. Nesciunt, id sapiente.</p>
+        </div>
+        <div class="child" id="second">
+            <p>2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, quia quam ea maxime eum saepe optio vero ab, dolorum minima suscipit odio dolorem perspiciatis doloribus cupiditate voluptatibus. Nesciunt, id sapiente.</p>
+        </div>
+        <div class="child" id="third">
+            <p>3 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, quia quam ea maxime eum saepe optio vero ab, dolorum minima suscipit odio dolorem perspiciatis doloribus cupiditate voluptatibus. Nesciunt, id sapiente.</p>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
