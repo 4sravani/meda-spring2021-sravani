@@ -1,7 +1,13 @@
-Body Text Color: White
-Header Text Color: White
-Link Text Color:White 
-Background Color: Grey
+                          Portfolio Preparation Goals
+
+
+
+Body Text Color: Black
+Header Text Color: Black
+Link Text Color:Black 
+Background Color: White
+
+
 
 Images icons used and credits
 Html Icon
@@ -21,8 +27,14 @@ https://www.iconfinder.com/icons
  Creative Hives  https://www.iconfinder.com/flaticondesign
 
 
+
+
 About Me
-My name is Sravani, I am a front end web developer. I have about few years experience in the industry. My skills are html, css, javascript, Wordpress.  I am constantly researching and learning online to keep up with new topics. I live in the South Bay. I love nature, hiking and gardening.
+My name is Sravani, I am a web publisher, designer and developer. I have about few years experience in the industry. My skills are html, css, javascript, Wordpress. I like to design and organize information for websites in simple way so people do not get overwhelmed with too much information. I believe  user experience should be easy and simplified. I am constantly researching and learning online to keep up with new topics.
+
+
+I live in the South Bay with my husband and two kids. I love nature, hiking and gardening. I also love to cook.
+
 
 PROJECTS PAGE
 Container garden  Project 1
