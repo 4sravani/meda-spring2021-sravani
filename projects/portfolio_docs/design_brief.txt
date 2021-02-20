@@ -1,0 +1,63 @@
+                          Portfolio Preparation Goals
+
+
+
+Body Text Color: #2E2F36 from Adobe color
+Header Text Color: #5E616E from Adobe Color
+Link Text Color:#2E2F36 from Adobe color
+Background Color: White
+
+
+
+Images icons used and credits
+Html Icon
+https://www.iconfinder.com/icons
+https://www.iconfinder.com/icons/939737/html5_icon_%E2%80%A2_html_icon
+
+Css icon
+https://www.iconfinder.com/icons
+https://www.iconfinder.com/icons/5113622/anycolor_css_icon_document_file_format_icon
+
+Java Script Icon
+https://www.iconfinder.com/icons
+https://www.iconfinder.com/icons/5113627/anycolor_document_file_format_js_icon_icon
+
+Wordpress
+https://www.iconfinder.com/icons
+ Creative Hives  https://www.iconfinder.com/flaticondesign
+
+
+
+
+About Me
+My name is Sravani, I am a web publisher, designer and developer. I have about few years experience in the industry. My skills are html, css, javascript, Wordpress. I like to design and organize information for websites in simple way so people do not get overwhelmed with too much information. I believe  user experience should be easy and simplified. I am constantly researching and learning online to keep up with new topics.
+
+
+I live in the South Bay with my husband and two kids. I love nature, hiking and gardening. I also love to cook.
+
+
+PROJECTS PAGE
+Container garden  Project 1
+Undecided            Project 2
+Undecided            Project 3
+
+
+CONTACT PAGE
+Please free to contact me  if you want to discuss about a project.
+ email address sravani.dg@gmail.com
+
+
+https://benadam.me/project-list.html
+This page a a designated header, body and footer. Overall it a very simple website, clean and give a very clear picture about the developer, his experience in frontend, backend web development, UI/UX as well as product development.
+The fonts are small, a bigger font size would make the site more attractive and readable.
+
+https://www.danielfischer.com/
+Just dark space with some scribbles in the center, no header, footer or body.
+
+https://sebkay.com/
+Very well presented website with attractive header, body and footer with consistency thorough out. Attractive and well usage of simple colors for the site mainly black, white and blue. Small and neat icons used . Content very informative and to the point.
+Nothing to dislike
+
+https://fabianirsara.com/
+Has static header with the logo on the left and menu on the right. However ,the body part of the web page scrolls over the header . The text size is too big and white, eyes starts to hurt at some point. Animated menu is nice
+

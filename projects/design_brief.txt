@@ -2,9 +2,9 @@
 
 
 
-Body Text Color: Black
-Header Text Color: Black
-Link Text Color:Black 
+Body Text Color: #2E2F36 from Adobe color
+Header Text Color: #5E616E from Adobe Color
+Link Text Color:#2E2F36 from Adobe color
 Background Color: White
 
 
