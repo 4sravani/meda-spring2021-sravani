@@ -78,5 +78,89 @@ console.log( cToF);
 !false; // true
 !true; // false
 
+//Boolean Operator
+
+// || or Operator
+
+(true || false); //true
+(false || true); //true
+(false || false); //false
+
+//  && AND operator
+
+(true && false); //false
+(true && true); //true
+
+(false || true || false);
+//becomes
+(true || false);
+// becomes true;
+
+(100 == 100 || 50 == 51 || mySecondVariable == sravani);
+// true || mySecondVariable == "sravani");
+
+var someData = "important";
+someData = "not so important";
+
+//Arrays 
+
+// Creating an Array and storing it in a variable.
+
+ var myFirstArray =["important" , "not so important"]
+
+ vardaysOfWeek =[
+     "Monday",
+     "Tuesday",
+     "Wednesday",
+     "Thursday",
+     "Friday",
+     "Saturday",
+     "Sunday"
+ ];
+
+ console.log(myFirstArray[0]);
+
+console.log(daysOfWeek[4]);
+
+daysOfWeek[7] = "Superday";
+
+daysOfWeek[2] = "Wednesday";
+
+console.log( daysOfWeek);
+
+//Array Functions
+
+//array.push()  Adds the value to the end of array
+
+myFirstArray.push( "Hello!");
+
+console.log(myFirstArray);
+
+myFirstArray.pop();  //removes the last value of the array 
+
+console.log(myFirstArray);
+
+//array.unshift(); adds vaalue to the START of the array
+
+//array.shift();  Removes the value at the START of the array
+
+console.log(myFirstArray);
+
+//  array.splice();
+
+daysOfWeek.splice(3, 0, "Breakday");
+
+console.log(daysOfWeek);
+
+// Objects , has no index number, has no order
+
+var myFirstObject = {
+  "value1" : "Sravani",
+  "value2" : "Oracle",
+  "value3": 30
+};
+console.log( myFirstObject[value2]);
+
+
 
 
