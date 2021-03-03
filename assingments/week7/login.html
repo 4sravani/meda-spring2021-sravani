@@ -2,24 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
 
     <style>
 
+        
+
         body {
 
             margin:0;
+            background-color: peru;
         }
-        #form-layout{
+
+
+        #form-layout  {
             width: 400px;
-            background-color: cornflowerblue;
+            background-color:red;
             margin:0 auto;
-            margin-top: 50vh;
+            margin-top: calc(50vh - 137px);
+            border-radius: 8px;
 
         }
 
-        #form-layout form{
+        #form-layout form {
             text-align: center;
         }
 
@@ -29,35 +36,45 @@
             padding: 10px;
             display: block;
             text-align: left;
-
-
-
+            color: wheat;
         }
+
 
         #form-layout input{
             font-size: 2em;
             border-radius: 8px;
             border-style: none;
             display: inline-block;
-            width: 96%;
+            width: 94%;
             margin-left: 2%;
             margin-right:2%;
 
 
         }
 
-        form-layout button{
+        #form-layout button{
             display: inline-block;
-            height:3em;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 2em;
             margin:10px;
             border-radius: 8px;
             border-style: none;
-            background-color: orange;
+            background-color: palevioletred;
             color: white;
             padding:12px;
+            padding-left: 24px;
+            padding-right: 24px;
+
         }
+
+        
+
+
+
+
+        
+
+
 
 
 
@@ -67,27 +84,20 @@
 </head>
 <body>
 
+    <div id="form-layout">
 
-</div id="form-layout">
-    <form>
-    <label for ="username">Username</label>
-    <input type="text" id="username"/>
-    <br>
-    <label for ="password">Password</label>
-    <input type="text" id="password" />
-    <br>
-    <button id="login" >Log In</button>
+        <form>
+            <label for="username">Username</label>
+            <input type="text" id="username"/>
+            <br />
+            <label for="password">Password</label>
+            <input type="password" id="password" />
+            <br />
+            <button id="login">Log In</button>
+        </form>
 
-    </form> 
-</div>
-
-
-
-
-
-
-
-<script src="login.js"></script>
+    </div>
     
+    <script src="login.js"></script>
 </body>
 </html>
