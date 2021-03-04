@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Calculator</title>
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <style>
+        #container {
+            width: 900px;
+            height: 500px;
+            background-color: grey;
+            display: flex;
+
+        }
+        #inputs {
+            flex-grow: 1;
+            background-color: cornflowerblue;
+        }
+         #inputs  div{
+             flex-grow: 1;
+             flex-basis: 50px;
+
+
+         }
+
+        #results {
+            background-color: cornsilk;
+            height: 200px;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="container">
+
+        <div id="input">
+            <div>
+                <h2>Monthly Expenses</h2>
+                <form>
+                    <label for="food">Food</label>
+                    <input  name="" type="number" id="food"/>
+                    <br>
+                    <label for="rent">Rent</label>
+                    <input type="number" id="rent"/>
+                    <br>
+                    <label for ="utilities">Utilities</label>
+                    <input type="number" id="utilities"/>
+                    <br>
+                    <label for="internet">Internet</label>
+                    <input type="number" id="internet"/>
+                    <br>
+                    <label for="mobile">Mobile</label>
+                    <input type="number" id="mobile"/>
+                    <br>
+                    <label for="debt-interest">Debt Interest</label>
+                    <input type="number" id="debt-interest"/>
+                    <br>
+                    <label for ="rainy-day">Rainy Day</label>
+                    <input type="number" id="rainy-day"/>
+                    <br>
+                    <label for="hobbies">Hobbies</label>
+                    <input type="number"id="hobbies"/>
+                    <br>
+                    <label for="travel">Travels</label>
+                    <input type="number"id="travel"/>
+                    <br>
+                    <label for="health-insurance">Health Insurance</label>
+                    <input type="number" id="health-insurance"/>
+                    <input type="reset"/>
+                    
+                    
+
+
+                </form>
+                <br>
+                <button id="submit">Calculate</button>
+            </div>
+        <div>
+            <h2>Monthly Income Sources</h2>
+            <form>
+                 <label for="job">Day Job Employee</label>
+                 <input type="number"id="travels"/>
+                <br>
+                <label for="gig">Gigs</label>
+                <input type="number"id="gig"/>
+                <br>
+                <label for="investments">Investments</label>
+                <input type="number"id="investments"/>
+                <input type="reset"/>
+            </form>
+            <br>
+            <button>Reset</button>
+            
+
+
+        </div>
+
+
+        <div id="results">
+            <h2>Results</h2>
+            <p id="monthly"> </p>
+            <p id="yearly"></p>
+
+        </div>
+
+
+    </div>
+
+
+ <script>
+
+$(document).ready(function(){
+
+// jQuery methods go here...
+
+$(document).ready(function () {
+
+    //Expenses Start
+
+    $("#submit").click(function () {
+
+         var food = $("#food").val();
+         var rent =$("#rent").val();
+         var utilities =$("#utilities").val();
+         var internet = $("#internet").val();
+         var mobile = $("#mobie").val();
+         var debtinterest = $("#debt-interest").val();
+         var rainyDay = $("#raini-day").val();
+         var hobbies = $("#hobbies").val();
+         var travel = $("#travel").val();
+         var healthinsurance = $("#health-insurance").val();
+
+         food = parseFloat(food);
+         rent = parseFloat(rent);
+         utilities = parseFloat(utilities);
+         internet = parseFloat(internet);
+         mobile = parseFloat(internet);
+         interest = parseFloat(interest);
+         rainyDay = parseFloat(rainyDay);
+         hobbies = parseFloat(hobbies);
+         travel = parseFloat(travel);
+         health = parseFloat(health);
+
+         var total = food + rent + utilities +  internet + mobile + interest + rainyDay + hobbies + travel + health
+
+
+
+
+         console.log(total);
+
+         //Expenses End
+
+
+         //Income Start
+
+         var dayJob = $("#job").val();
+         var gig = $("#gig").val();
+         var investments = $("#investments").val();
+
+
+         dayJob = parseFloat(dayJob);
+         gig = parseFloat(gig);
+         investments = parseFloat(investments);
+
+         var totalIncome = dayJob + gig + investments;
+         var difference = totalIncome - totalIncome;
+
+         console.log(difference);
+
+
+
+
+         //Income End
+
+         //Results starts
+
+
+         //Results Ends
+
+
+    });
+        
+
+    });
+
+});
+ </script>   
+</body>
+</html>

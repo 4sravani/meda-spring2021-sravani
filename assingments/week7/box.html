@@ -35,8 +35,23 @@
 
             } else if (key === 97) {
                 console.log("Move left !!");
-                
+
             }else if ( key === 115) {
+
+                var currentMarginTop = $("#first-box").css("margin-top");
+
+                currentMarginTop = parseInt(currentMarginTop);
+
+                // "ONE LINER"
+                    //$("#firstBox").css("margin-top", (parseInt($("#firstBox").css("margin-top")) + 10) + "px");
+
+                    // MULTI LINER
+                    // var currentMarginTop = $("#firstBox").css("margin-top");
+                    // currentMarginTop = parseInt(currentMarginTop);
+                    // var newMargin = (currentMarginTop + 10) + "px";
+                    // $("#firstBox").css("margin-top", newMargin);
+
+
                 console.log("Move down!!");
 
             }else if (key === 100) {
