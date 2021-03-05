@@ -20,29 +20,82 @@
 
     <div id="first-box"></div>
     <div></div>
+
     <script>
-    
-    $(document).ready(function(){
 
-// jQuery methods go here...
+        function rand0to255() {
 
-         $("body").keypress(function(event){
+            var randomNumber = Math.random() *256;
+            randomNumber = Math.floor(randomNumber)
 
-            key = event.which;
+            //console.log(randomNumber);
 
-            if (key === 119) {
-                console.log("MOve up!!");
 
-            } else if (key === 97) {
-                console.log("Move left !!");
+          
 
-            }else if ( key === 115) {
+        }
+         function cssRandomColor() {
+        var myColor = rand0to255();
+        var myColor2 = rand0to255();
+        var myColor3 = rand0to255();
 
-                var currentMarginTop = $("#first-box").css("margin-top");
+        var cssRandomColor = "rgb(" + rand0to255() + ", " + rand0to255() + ")";
+        console.log(cssRandomColor);
 
-                currentMarginTop = parseInt(currentMarginTop);
+        console.log(cssRandomColor);
 
-                // "ONE LINER"
+         }
+
+        //rand0to255();
+        //rand0to255();
+        //rand0to255();
+       // rand0to255();
+
+        //Random number generator for 1 to 10
+
+        // make a random between 0 to .9~
+
+        //var randomNumber = Math.random();
+        //var randomNumber1to10 = (randomNumber * 10) + 1;
+       // console.log(randomNumber1to10);
+        //randomNumber1to10 = Math.floor(randomNumber1to10);
+
+        //end of random number generator
+
+
+
+        $(document).ready(function () {
+
+            var myBox = $("#firstBox");
+
+            myBox.css("background-color", cssRandomColor);
+            
+            jQuery("body").keypress(function (event) {
+
+                var key = event.which;
+                
+                // UP
+                if (key === 119) {
+
+                    var currentMarginTop = myBox.css("margin-top");
+
+                    if (currentMarginTop != "0px") {
+                        myBox.css("margin-top", "-=20px");
+                    }
+
+                // LEFT
+                } else if (key === 97) {
+
+                    var currentMarginLeft = myBox.css("margin-left");
+
+                    if (currentMarginLeft != "0px") {
+                        myBox.css("margin-left", "-=20px");
+                    }
+
+                // DOWN
+                } else if (key === 115) {
+
+                    // "ONE LINER"
                     //$("#firstBox").css("margin-top", (parseInt($("#firstBox").css("margin-top")) + 10) + "px");
 
                     // MULTI LINER
@@ -51,23 +104,19 @@
                     // var newMargin = (currentMarginTop + 10) + "px";
                     // $("#firstBox").css("margin-top", newMargin);
 
+                    myBox.css("margin-top", "+=20px");
 
-                console.log("Move down!!");
+                // RIGHT
+                } else if (key === 100) {
 
-            }else if (key === 100) {
-                console.log("Move right");
-            }
+                    myBox.css("margin-left", "+=20px");
 
-        console.log("Key was pressed");
+                }
 
-         });
+            });
 
-
-
-});
-
-
+        });
     </script>
-    
+
 </body>
 </html>
