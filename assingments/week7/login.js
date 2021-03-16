@@ -2,7 +2,7 @@ console.log("Hello world");
 
 $(document).ready(function () {
 
-    console.login("JQuery is ready!!");
+    console.log("JQuery is ready!!");
 
     $("#login").click(function (event) {
 
@@ -17,13 +17,13 @@ $(document).ready(function () {
                 console.log("Congratz, you are now logged in!");
                 window.location.replace("http://www.yahoo.com/");
             // } else if (password === "one23456") {
-            //     console.log("The password is kinda right. But no dice.");
+            //     console.log("The password is sort of right. But no dice.");
             } else {
-                console.log("wrong password!");
+                console.log("Wrong Password!");
             }
 
         } else {
-            console.log("username is wrong!");
+            console.log("Username is Wrong! Please try again!!");
         }
 
     });

@@ -5,249 +5,272 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budget Calculator</title>
-
     <script src="jquery-3.5.1.min.js"></script>
+
     <style>
 
-     
-#container {
-            width: 900px;
-            background-color:darkgrey;
+        #container {
+            background-color: burlywood;
+            width: 600px;
+            height:800px;
+            margin: 0 auto;
+            border-radius: 30px;
+            padding: 20px;
+            
+            
+        }
+        #headingone{
+            color:grey;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.75em;
+            font-weight: bold;
         }
 
-        #input {
-            display: flex;
-            background-color:darkkhaki;
-        }
-
-        #input  div {
-            flex-grow: 1;
-            flex-basis: 50%;
+        #inputs {
+           display: flex;
+           
         
+        justify-content: center;  
+            
+            background-color:gainsboro;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        
+           
+            }
+
+        
+            
+
+        
+
+        #headingtwo {
+            color:grey;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.5em;
+            font-weight: bold;
+
+
         }
 
-        #results {
-            background-color:darksalmon;
-            height: 100px;
+
+        #expenses{
+            margin: 0 auto;
+            
+        }
+
+        #headingthree {
+            color: grey;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.5em;
+            font-weight: bold;
+
+        }
+
+        #income {
+            margin: 0 auto;
+        }
+
+        label {
+            display: inline-block;
+            width: 60px;
+            text-align: left;
+            padding: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1em;
+            margin: 15px;
+
+        }
+
+        
+
+        
+
+        #expensereset{
+            width:100px;
+            margin:0 50%;
+            position:relative;
+            left:-50px;
+        }
+
+        #incomereset{
+            width:100px;
+            margin:0 50%;
+            position:relative;
+            left:-50px;
+        }
+
+        #submit {
+            width:100px;
+            margin:0 50%;
+            position:relative;
+            left:-50px;
+            
+        }
+
+        
+        
+        
+            
+
+        
+  
+        #results{
+            background-color: gainsboro;
+            width: 600px;
+            height: 50px;
+            font-family: 'Courier New', Courier, monospace;
         }
 
     </style>
-
+    <script src="jquery-3.5.1.min.js"></script>
 </head>
 <body>
-    <div id="container">
-        <h1>Monthly Budget Calculator</h1>
-        <p>Tax rate not accurate</p>
-
-        <div id="input">
-            <!--Expenses-->
-            <div>
-                <h2>Monthly Expenses</h2>
-                
-                <form>
-                    <label for="food">Food</label>
-                    <input  name="" type="number" id="food"/>
-                    <br>
-                    <label for="rent">Rent</label>
-                    <input type="number" id="rent"/>
-                    <br>
-                    <label for ="utilities">Utilities</label>
-                    <input type="number" id="utilities"/>
-                    <br>
-                    <label for="internet">Internet</label>
-                    <input type="number" id="internet"/>
-                    <br>
-                    <label for="mobile">Mobile</label>
-                    <input type="number" id="mobile"/>
-                    <br>
-                    <label for="debt-interest">Debt Interest</label>
-                    <input type="number" id="debt-interest"/>
-                    <br>
-                    <label for ="rainy-day">Rainy Day</label>
-                    <input type="number" id="rainy-day"/>
-                    <br>
-                    <label for="hobbies">Hobbies</label>
-                    <input type="number"id="hobbies"/>
-                    <br>
-                    <label for="travel">Travels</label>
-                    <input type="number"id="travel"/>
-                    <br>
-                    <label for="health-insurance">Health Insurance</label>
-                    <input type="number" id="health-insurance"/>
-                    <br>
-                    <input type="reset"/>
-                    
-                    
+    <div id="container"> 
+        <p id="headingone">Budget Calulator</p>
 
 
-                </form>
-                <br>
-                <button id="submit">Calculate</button>
-            </div>
-            <!-- Expenses -->
+          <div id="inputs">
 
 
-            <!-- Income -->
-        <div>
-            <h2>Monthly Income </h2>
+             <!-- Monthly Expense Start-->
+
+            <div id="expenses">
+         
+             <p id="headingtwo">Monthly Expenses</p>
+
             <form>
-                 <label for="job">Day Job Employee</label>
-                 <input type="number"id="travels"/>
+                <label for ="food">Food</label>
+                <input type ="number" id ="food"  placeholder="$"/>
+                <br>    
+                <label for ="rent">Rent</label>
+                <input type ="number" id ="rent"  placeholder="$"/>
+                <br>    
+                <label for ="utility">Utility</label>
+                <input type ="number" id ="utility" placeholder="$" />
+                <br>   
+                <label for ="medical">Medical Insurance</label>
+                <input type ="number" id ="medical"  placeholder="$"/>
                 <br>
-                <label for="gig">Gigs</label>
-                <input type="number"id="gig"/>
+                <label for ="loan">Student Loan</label>
+                <input type ="number" id ="loan"  placeholder="$"/>
                 <br>
-                <label for="investments">Investments</label>
-                <input type="number"id="investments"/>
-                <br>
-                <input type="reset"/>
-            </form>
-        
+
+                <input type="reset" id="expensereset" />
             
-        </div>
+            </form>
+            
+           </div>
 
-          <!-- Income -->
+            <!-- Monthly Expense Ends-->
 
+            <!-- Monthly Icome  start-->
+
+            <div id="income">
+               <p id="headingthree">Monthly Income</p>
+
+               <form>
+                   <label for ="employment">Employment</label>
+                   <input type ="number" id ="employment" placeholder="$" />
+                   <br>
+                   <label for ="gig">Side Gig</label>
+                   <input type ="number" id ="gig"  placeholder="$"/>
+                   <br>
+                   <label for ="investment">Investment</label>
+                   <input type ="number" id ="investment"  placeholder="$"/>
+                   <br>
+
+                   <input type="reset" id="incomereset"/>
+
+                
+                </form>
+
+            </div>
+        <!-- Monthly Income Ends-->
+        <div><button id="submit">Calculate</button></div>
+
+
+       </div>
+       
+       <!-- Results begins-->
+       <div id="results"></div>
+       <p id="money"></p>
+            
+       <!-- Results ends-->
     </div>
-      
-
-        <!-- Results-->
-        <div id="results">
-            <h2>Results</h2>
-            <p id="monthly"> </p>
-            <p id="yearly"></p>
-
-        </div>
-
-        <!-- Results -->
-
-
-   
-    </div>
-</div>
-
-
- <script>
-
-     //State Tax
-
-    //Federal Tax
-
-    //employee total 21%
-    //contract total 36.3%
 
 
 
-$(document).ready(function(){
 
-// jQuery methods go here...
+<script>
 
 $(document).ready(function () {
 
-    //Expenses Start
+
 
     $("#submit").click(function () {
 
-         var food = $("#food").val();
-         var rent =$("#rent").val();
-         var utilities =$("#utilities").val();
-         var internet = $("#internet").val();
-         var mobile = $("#mobie").val();
-         var debtInterest = $("#debt-interest").val();
-         var rainyDay = $("#raini-day").val();
-         var hobbies = $("#hobbies").val();
-         var travel = $("#travel").val();
-         var healthInsurance = $("#health-insurance").val();
+    // console.log("Hello World");
 
-         food = parseFloat(food);
-         rent = parseFloat(rent);
-         utilities = parseFloat(utilities);
-         internet = parseFloat(internet);
-         mobile = parseFloat(internet);
-         debtInterest = parseFloat(debtInterest);
-         rainyDay = parseFloat(rainyDay);
-         hobbies = parseFloat(hobbies);
-         travel = parseFloat(travel);
-         healthInsurance= parseFloat(healthInsurance);
+    var food = $("#food").val();
+    var rent = $("#rent").val();
+    var utility = $("#utility").val();
+    var medical = $("#medical").val();
+    var loan = $("#loan").val();
 
-         var expenseTotal = food + rent + utilities +  internet + mobile + debtInterest + rainyDay + hobbies + travel + healthInsurance
+
+
+    food = parseFloat(food);
+    rent = parseFloat(rent);
+    utility = parseFloat(utility);
+    medical = parseFloat(medical);
+    loan = parseFloat(loan);
 
 
 
 
-         console.log(expenseTotal);
+    var totalExpense = food + rent + utility + medical + loan;
 
-         //Expenses End
-
-
-         //Income Start
-
-         var dayJob = $("#job").val();
-         var gig = $("#gig").val();
-         var investments = $("#investments").val();
+    //console.log( "total expenses for this month is $"+totalExpense);
 
 
-         dayJob = parseFloat(dayJob);
-         gig = parseFloat(gig);
-         investments = parseFloat(investments);
+    var employment = $("#employment").val();
+    var gig = $("#gig").val();
+    var investment = $("#investment").val();
 
-         var totalIncome = dayJob + gig + investments;
-         var difference = totalIncome - expenseTotal;
+    employment = parseFloat(employment);
+    gig = parseFloat(gig);
+    investment = parseFloat(investment);
 
-         console.log(difference);
+    var totalIncome = employment + gig + investment;
 
-
-
-
-         //Income End
+    var difference = totalIncome - totalExpense;
 
 
-         //Taxes Start
-
-         var employeeTaxRate = .21;
-         var contractorTaxRate = .363;
-
-
-         var employeeTaxAmount = dayJob * employeeTaxRate;
-         var contractorTaxAmount = gig * contractorTaxRate;
-         var taxTotal = employeeTaxAmount +  contractorTaxAmount;
-
-         //difference = difference - (employeeTaxAmount + contractorTaxAmount);
+    if (difference > 0) {
+        $("#money").text ("Your total expenses for this month is $" + Math.abs(totalExpense)+ " and your income was $" + Math.abs(totalIncome) + "." +" You have saved $" +Math.abs(difference )+ " for this month."+" Good job!!");
+    } else if (difference < 0) {
+        $("#money").text("Your total expenses for this month is $" + Math.abs(totalExpense)+ " and your income was $" + Math.abs(totalIncome) + "." + " You have to use your credit card for this month to cover the $" + Math.abs(difference) + " excess spending for this month.");
+    } else if (difference == 0) {
+        $("#money").text("Your total expenses for this month is $" + Math.abs(totalExpense)+ " and your income was $" + Math.abs(totalIncome) + "." + " You have the exact amount of expenses as your income.");
+    } else if (isNaN(difference)){
+        $("#money").text("Please enter a number, if you don't have a number enter zero instead.");
+    }
 
 
-
-         //Taxes End
-
-         //Results starts
-
-         if (difference > 0) {
-                    $("#monthly").text("Congratulations, you have an extra $" + difference + " dollars for this month!" + "We recommend you save $" + totalTax + "for taxes." );
-
-                } else if (difference < 0) {
-                    $("#monthly").text("Looks like you will need to use your credit card to cover the $" + Math.abs(difference) + " expenses for this month..." + "Total taxes would be  $" + totalTax);
-                }
-                  else if (difference == 0) {
-                      $("#monthly").text("Income is excatly equal to expense." + "Please save  $ " + totalTax + "taxes");
-                }
-
-                 else if (isNaN(difference)) {
-                    $("#monthly").text("One of your inputs does not have a number in it! Please use the value 0 (zero)!");
-                }
-        
-        
+    
 
 
-         //Results Ends
 
 
     });
 
 });
-        
+</script>
 
-   
-
-});
- </script>   
+    
 </body>
 </html>

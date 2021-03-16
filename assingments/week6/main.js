@@ -1,52 +1,52 @@
-// how to USE a function: functionName();
-console.log("Good Morning Eduardo!");
+//how to use a function  function();
 
-console.log("Goodbye!");
+console.log("Good Morning, Sravani!");
 
-// Variables
+//Variables
 
-// DEFINING a Variable in our program.
-var myFirstVariable;
-myFirstVariable = "My name is Victoria.";
+
+myFirstVariable = "My name is Patricia";
 console.log(myFirstVariable);
 
-var mySecondVariable = "My name is Earl";
+var mySecondVariable = "My name is Emma";
 
-// The Three most common Datatypes
+console.log(mySecondVariable);
 
-// Strings
-"My name is Victoria.";
-'What is your name?';
+//Data types
 
-// Number
+//Strings
+
+"My name is Patricia";
+"What is your name";
+
+//Number
+
 10;
-9;
-20;
+12;
+50;
 0;
-1000000;
-10.5;
--10.5;
-"10"; // NOT A NUMBER, it is a String instead.
+600000;
+10.7;
+-20.5;
+-9;
+"10"; //is not a number it is a string
 
-// Boolean
+//Boolean
 true;
 false;
 
-
-// Mathematical Operators
-(10 + 10); // 20 Addition -> Sum
-(5 - 10); // -5 Subtraction -> Difference
-(2 / 5); // .40 Division -> Quotient
-(10 * 5); // 50 Multiplication -> Product
-(10 % 3) // 1 Modulus -> Modulo
+//mathematical operators
+(10 +10 ); //20 addition is sum
+(5 - 10); // -5 subtraction is difference
+(2/6); // .40  division is quotient
+(20 * 3); //60 multiplication is product
+(10 % 3); // i remainder is modulus
 
 // 105 % 2 == 1; IS ODD NUMBER
 // 104 % 2 == 0; IS EVEN NUMBER
 
 
-
-var myMostImportantNumber = (50 - 10);
-
+var myMostImportantNumber = (50-20);
 console.log(myMostImportantNumber);
 
 var currentCTemp = 2800;
@@ -84,7 +84,7 @@ console.log(cToF);
 
 
 
-(mySecondVariable == "Eduardo"); // False
+(mySecondVariable == "Sravani"); // False
 
 
 // Boolean Operators
@@ -112,20 +112,24 @@ console.log(cToF);
 true;
 
 
-(100 == 100 || 50 == 51 || mySecondVariable == "Eduardo");
+(100 == 100 || 50 == 51 || mySecondVariable == "Sravani");
 //becomes
-true || mySecondVariable == "Eduardo";
+true || mySecondVariable == "Sravani";
 
 
 var someData = "important";
 someData = "not so important.";
 
-// Arrays
 
-// Creating an array and storing it in a variable.
-var myFirstArray = ["important", "not so important"];
 
-var daysOfWeek = [
+
+var myFirstArray = ["Important", "Not so important"];
+
+
+
+
+
+var dayOfWeek = [
     "Monday",
     "Tuesday",
     "Wednesday",
@@ -135,122 +139,111 @@ var daysOfWeek = [
     "Sunday"
 ];
 
-
 console.log(myFirstArray[0]);
 
-console.log(daysOfWeek[4]);
+console.log(dayOfWeek[5]);
 
-daysOfWeek[7] = "Superday";
+dayOfWeek[7]= "Superday";
 
-daysOfWeek[2] = "Whensday";
+dayOfWeek[2] = "Whenesday";
 
-console.log(daysOfWeek);
+console.log(dayOfWeek);
 
-// Array Functions
 
-// array.push() Adds the value to the END of the array.
+//array.push(); adds new value to array at the END of the existing array
 
-myFirstArray.push("hello!");
+myFirstArray.push("hello");
 
 console.log(myFirstArray);
 
-// array.pop() Removes the value at the END of the array.
+//array.pop() removes the value at the END of the array
 
 myFirstArray.pop();
 
 console.log(myFirstArray);
 
-// array.unshift() Add the value to the START of the array.
+// array.unshift() adds value to the START of the array
 
 myFirstArray.unshift("sunny day");
 
 console.log(myFirstArray);
 
-// array.shift() Removes the value at the START of the array.
+//array.shift() removes the value at the START of the array
 
 myFirstArray.shift();
 
 console.log(myFirstArray);
 
-// array.splice()
+// array.splice();
 
-daysOfWeek.splice(3, 0, "Breakday");
-
-console.log(daysOfWeek);
-
-
-// Objects
-
-var MEDAInstructor = {
-    "firstName": "Miguel",
-    "job": "MEDA",
-    "age": 30
-};
-
-var myThirdArray = ["Eduardo", "MEDA", 30];
-
-console.log(MEDAInstructor["firstName"]);
-console.log(MEDAInstructor.job);
-
-MEDAInstructor.job = "CCSF";
-
-// Adds a new 
-MEDAInstructor.favFood = "Burrito";
-MEDAInstructor.age = null;
-
-// Removes the key-value pair from the object.
-delete MEDAInstructor.age;
-
-console.log(MEDAInstructor);
+dayOfWeek.splice( 3, 0, "Breakday");
+ console.log(dayOfWeek);
 
 
+ //Objects
+ var personalInfo = {
+     "firstName" : "Sravani",
+     "job" : "Student",
+     "age" : 30
+ };
+
+ var myThirdArray = [ "Sravani", "Student", 30];
+
+ console.log(personalInfo ["firstName"]);
+  console.log(personalInfo.job);
+
+  personalInfo.job = "Sun Microsyatems";
+
+  //add a new 
+
+  personalInfo.favFood = "Tom Yum Soup";
+  personalInfo.age = null; 
+  
+  //removes the key pair from the object, deletes age from array
+
+delete personalInfo.age;
+
+console.log(personalInfo);
 console.log(typeof []);
-
-
 
 // Conditional Statements. If statement needs to have a true value in order to run/execute the code in its code block.
 
 // Conditional statement syntax
 // if (true or false value) { code to run based on condition in parenthesis. }
 
-if (MEDAInstructor.firstName == "Eduardo") {
-    console.log("Welcome to our website, Eduardo!");
-}
+if (personalInfo.firstName == "Sravani") {
+    console.log("Welcome to our website, Sravani!");
 
+}
 
 var numberToTest = 0;
-
-if (numberToTest > 0) {
-    console.log("The number is positive.");
+if (numberToTest > 0 ) {
+    console.log("The number is positive");
 } else {
-    console.log("The number is NOT positive");
+    console.log("The number is not positive");
 }
 
-console.log("Hello!");
+console.log("Hello");
+
 
 if (numberToTest == 0) {
     console.log("The number is a zero");
-} else {
-    console.log("The number is not a zero.");
-}
+   }   else {
+        console.log("The number is not a zero");
+    }
+
 
 if (numberToTest < 0) {
     console.log("The number is negative.");
-} else {
-    console.log("The number is NOT negative");
+
+} else  {
+    console.log ("The number is not negative");
 }
 
 
+var personAge = 40;
 
-
-
-
-var personAge;
-
-personAge = 40;
-
-var personLikesDrinking = true;
-
+var perLikesDrinking = true;
 
 if (personAge >= 21 && personAge <= 25) {
     console.log("Congratz! You are of drinking age!");
@@ -266,7 +259,7 @@ if (personAge >= 21 && personAge <= 25) {
 }
 
 
-// While Loop, CHECK FIRST if condition is true, if true THEN run code block.
+//While Loop, CHECK FIRST if condition is true, if true THEN run code block.
 var continueRunning = 0;
 
 while (continueRunning < 10) {
@@ -462,5 +455,3 @@ mathForMe(23,320);
 
 
 // NaN: Not a Number, meaning you multiplied or divided by a value that cannot be multiplied or divided. Example: console.log(mathSummarizer(0, 0));
-
-// Infinity: what is this?
